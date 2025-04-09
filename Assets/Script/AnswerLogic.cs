@@ -25,6 +25,8 @@ public class AnswerLogic : MonoBehaviour
     [SerializeField] private AudioClip answerClickSound;
     [SerializeField] private float questionTime = 10f;
     [SerializeField] private TextMeshProUGUI timerText;
+    [SerializeField] public GameObject ScoreCanvas;
+    [SerializeField] public TextMeshProUGUI ScoreText;
 
     private float timer;
     private bool isCountingDown = false;
@@ -51,6 +53,8 @@ public class AnswerLogic : MonoBehaviour
     private void Start()
     {
         DisplayQuestion();
+        Time.timeScale = 1f;
+        ScoreCanvas.SetActive(false);
     }
 
     void DisplayQuestion()
@@ -140,14 +144,19 @@ public class AnswerLogic : MonoBehaviour
     {
         timerText.gameObject.SetActive(false);
         questionImage.gameObject.SetActive(false);
+        questionText.gameObject.SetActive(false);
 
         Debug.Log("Quiz Finished! Score: " + score + "/" + questions.Count);
-        questionText.text = $"Finished! Score: {score}/{questions.Count}";
+
+        ScoreText.text = $"Finished! Score: {score}/{questions.Count}";
+        ScoreText.gameObject.SetActive(true);
 
         foreach (var btn in answerButtons)
         {
             btn.SetActive(false);
         }
+        
+        ScoreCanvas.SetActive(true);
     }
 
     private void Update()
