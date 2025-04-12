@@ -27,6 +27,11 @@ public class AnswerLogic : MonoBehaviour
     [SerializeField] private TextMeshProUGUI timerText;
     [SerializeField] public GameObject ScoreCanvas;
     [SerializeField] public TextMeshProUGUI ScoreText;
+    [SerializeField] private int currentLevelIndex = 1;
+
+    //ScoreCanvas
+    [SerializeField] private Button nextLevelButton;
+    [SerializeField] private Button retryButton;
 
     private float timer;
     private bool isCountingDown = false;
@@ -140,24 +145,43 @@ public class AnswerLogic : MonoBehaviour
         DisplayQuestion();
     }
 
-    void EndQuiz()
+void EndQuiz()
+{
+    timerText.gameObject.SetActive(false);
+    questionImage.gameObject.SetActive(false);
+    questionText.gameObject.SetActive(false);
+
+    Debug.Log("Quiz Finished! Score: " + score + "/" + questions.Count);
+
+    ScoreText.text = $"Finished! Score: {score}/{questions.Count}";
+    ScoreText.gameObject.SetActive(true);
+
+    bool playerAced = score == questions.Count;
+
+
+    if (score == questions.Count)
     {
-        timerText.gameObject.SetActive(false);
-        questionImage.gameObject.SetActive(false);
-        questionText.gameObject.SetActive(false);
-
-        Debug.Log("Quiz Finished! Score: " + score + "/" + questions.Count);
-
-        ScoreText.text = $"Finished! Score: {score}/{questions.Count}";
-        ScoreText.gameObject.SetActive(true);
-
-        foreach (var btn in answerButtons)
-        {
-            btn.SetActive(false);
-        }
+    int nextLevel = currentLevelIndex + 1;
+    Debug.Log($"Player aced the quiz. Unlocking next level: {nextLevel}");
+    LevelProgress.UnlockLevel(nextLevel);
         
-        ScoreCanvas.SetActive(true);
+        nextLevelButton.gameObject.SetActive(true);
+        retryButton.gameObject.SetActive(false);
     }
+    else
+    {
+        nextLevelButton.gameObject.SetActive(false);
+        retryButton.gameObject.SetActive(true);
+    }
+
+    foreach (var btn in answerButtons)
+    {
+        btn.SetActive(false);
+    }
+
+    ScoreCanvas.SetActive(true);
+}
+
 
     private void Update()
 {
