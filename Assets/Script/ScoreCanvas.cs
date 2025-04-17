@@ -23,4 +23,8 @@ public void LoadLevel(int levelIndex)
 {
     SceneManager.LoadScene(levelIndex);
 }
+
+public void LoadLevel3() {
+    SceneManager.LoadScene("Level3");
+}
 }
