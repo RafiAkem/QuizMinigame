@@ -158,10 +158,10 @@ void EndQuiz()
     bool playerAced = score == questions.Count;
 
     if (score == questions.Count) {
-        ScoreText.text = $"Finished! Score: {score}/{questions.Count}";
+        ScoreText.text = $"{score}/{questions.Count}";
         ScoreText.gameObject.SetActive(true);
     } else {
-        ScoreText.text = $"Try Again! You Scored : {score}/{questions.Count}";
+        ScoreText.text = $"{score}/{questions.Count}";
         ScoreText.gameObject.SetActive(true);
     }
 

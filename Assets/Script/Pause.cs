@@ -7,16 +7,16 @@ public class Pause : MonoBehaviour
 {
     public static bool Paused = false;
     public GameObject PauseMenuCanvas;
-    public GameObject SettingsMenuCanvas; // Assuming you have a settings menu canvas
+    public GameObject SettingsMenuCanvas; 
 
     void Start()
     {
         Time.timeScale = 1f;
-        PauseMenuCanvas.SetActive(false); // Ensure the pause menu is hidden at the start
-        SettingsMenuCanvas.SetActive(false); // Ensure the settings menu is hidden at the start
+        PauseMenuCanvas.SetActive(false); 
+        SettingsMenuCanvas.SetActive(false); 
     }
 
-    // Update is called once per frame
+    
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape))
