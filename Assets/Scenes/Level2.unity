@@ -170,7 +170,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1632348634}
-  - {fileID: 347408837}
+  - {fileID: 1591745357}
   - {fileID: 1150967465}
   - {fileID: 206783081}
   - {fileID: 851709876}
@@ -210,54 +210,76 @@ MonoBehaviour:
   nextLevelButton: {fileID: 1347250210}
   retryButton: {fileID: 206062944}
   questions:
-  - questionText: Halo
+  - questionText: Hewan mamalia ini adalah satu-satunya yang bisa terbang, hewan
+      ini juga merupakan hewan nokturnal. Apa itu?
     options:
-    - hai
-    - hi
-    - he
-    - ha
+    - Burung Hantu
+    - Serigala
+    - Kelelawar
+    - Tikus
     correctAnswerIndex: 0
-    questionImage: {fileID: 21300000, guid: a16d382713c7dfd41a18a8f6af179641, type: 3}
+    questionImage: {fileID: 21300000, guid: 13a28ba81c5c07841a682d56aad552ed, type: 3}
     answerImages: []
     usesImageAnswers: 0
-  - questionText: Singa
-    options: []
+  - questionText: 'Hewan ini bisa tidur selama berbulan-bulan tanpa makan saat musim
+      dingin, dan Hewan ini bisa berdiri di atas dua kaki dan ada jenisnya yang hidup
+      di Kutub Utara. Apa itu? '
+    options:
+    - Beruang
+    - Singa
+    - Kuda
+    - Harimau
     correctAnswerIndex: 0
-    questionImage: {fileID: 21300000, guid: b6c1a9bfbf8bca24b962139e7217b3c6, type: 3}
+    questionImage: {fileID: 21300000, guid: 2ca91938f8c35f44e8fca17511d0d7eb, type: 3}
     answerImages:
     - {fileID: 21300000, guid: f1f52e6492838d4458139d23018309b6, type: 3}
     - {fileID: 21300000, guid: e67e1d9fb96e05642b3b2b435ad996c8, type: 3}
     - {fileID: 21300000, guid: f767afe0911dee24c8717e7cbfcf3661, type: 3}
     - {fileID: 21300000, guid: 5b81bdc23c8b36a408cf13f0ad51370b, type: 3}
-    usesImageAnswers: 1
-  - questionText: Nona
+    usesImageAnswers: 0
+  - questionText: Hewan ini bisa memanjat pohon dan tebing curam dengan sangat lincah,
+      dan Hewan ini menghasilkan susu dan suara khasnya adalah "mbee". Apa itu?
     options:
-    - hai
-    - hi
-    - he
-    - ha
+    - Sapi
+    - Kambing
+    - Monyet
+    - Kucing
     correctAnswerIndex: 0
-    questionImage: {fileID: 21300000, guid: 30ecf551cd356f546bb783bfe8c489d2, type: 3}
+    questionImage: {fileID: 21300000, guid: d9abb11709860fe47a7b42438af46443, type: 3}
     answerImages: []
     usesImageAnswers: 0
-  - questionText: nongsim
+  - questionText: Hewan ini bisa tidur sambil berdiri dan sering digunakan manusia
+      untuk transportasi. Apa itu?
     options:
-    - hai
-    - hi
-    - he
-    - ha
+    - Kuda
+    - Keledai
+    - Sapi
+    - Anjing
     correctAnswerIndex: 0
-    questionImage: {fileID: 21300000, guid: 5cdd4ef0fb526044fa4a888c95f3e2c1, type: 3}
+    questionImage: {fileID: 21300000, guid: b9d9006757c3a4146a3fe430b6d095de, type: 3}
     answerImages: []
     usesImageAnswers: 0
-  - questionText: Alrizza
+  - questionText: Hewan ini dikenal sebagai "raja hutan" namun hidup di sabana dan
+      hidup dalam kelompok yang disebut "pride". Apa itu?
     options:
-    - hai
-    - hi
-    - he
-    - ha
-    correctAnswerIndex: 0
-    questionImage: {fileID: 21300000, guid: e67e1d9fb96e05642b3b2b435ad996c8, type: 3}
+    - Serigala
+    - Harimau
+    - Singa
+    - Cheetah
+    correctAnswerIndex: 3
+    questionImage: {fileID: 21300000, guid: ebbaceaaa720f694c94ebbb042ca0afc, type: 3}
+    answerImages: []
+    usesImageAnswers: 0
+  - questionText: 'Hewan ini sering hidup dan berburu dalam kawanan serta memiliki
+      insting sosial yang kuat, serta Hewan ini menyerupai anjing, namun hidup liar
+      dan sering melolong di malam hari. Apa itu? '
+    options:
+    - Anjing
+    - Rubah
+    - Serigala
+    - Hyena
+    correctAnswerIndex: 2
+    questionImage: {fileID: 21300000, guid: 295f041dbcf264a4e8b088108a9be449, type: 3}
     answerImages: []
     usesImageAnswers: 0
 --- !u!114 &111027577
@@ -343,8 +365,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.0000076294, y: 124.07}
-  m_SizeDelta: {x: 369.5863, y: 132.84}
+  m_AnchoredPosition: {x: -0.0000099987, y: 119.62}
+  m_SizeDelta: {x: 142.4894, y: 157.51}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &206783082
 MonoBehaviour:
@@ -409,17 +431,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 347408836}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 111027575}
+  m_Father: {fileID: 1591745357}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -2.1054, y: 40}
-  m_SizeDelta: {x: 239.3285, y: 35.3059}
+  m_AnchoredPosition: {x: -2.34, y: 23.213}
+  m_SizeDelta: {x: 901.32, y: 35.303}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &347408838
 MonoBehaviour:
@@ -841,7 +863,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -108, y: -41}
+  m_AnchoredPosition: {x: -121, y: -102}
   m_SizeDelta: {x: 160, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1150967466
@@ -976,6 +998,82 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1591745356
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1591745357}
+  - component: {fileID: 1591745359}
+  - component: {fileID: 1591745358}
+  m_Layer: 5
+  m_Name: BGText
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1591745357
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1591745356}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 347408837}
+  m_Father: {fileID: 111027575}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0.50003, y: -16}
+  m_SizeDelta: {x: 907, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1591745358
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1591745356}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1591745359
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1591745356}
+  m_CullTransparentMesh: 1
 --- !u!1001 &1610970423
 PrefabInstance:
   m_ObjectHideFlags: 0

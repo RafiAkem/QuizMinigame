@@ -202,8 +202,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 8.1981, y: 113.82244}
-  m_SizeDelta: {x: 295.8038, y: 153.3351}
+  m_AnchoredPosition: {x: -0.0000050068, y: 78.75}
+  m_SizeDelta: {x: 272.7545, y: 257.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &86967506
 MonoBehaviour:
@@ -414,17 +414,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 187343184}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1747703993}
+  m_Father: {fileID: 1194164907}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -2.1054, y: 40}
-  m_SizeDelta: {x: 239.3285, y: 35.3059}
+  m_AnchoredPosition: {x: -0.0050049, y: 30.06}
+  m_SizeDelta: {x: 907.01, y: 27.653}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &187343186
 MonoBehaviour:
@@ -558,7 +558,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -108, y: -41}
+  m_AnchoredPosition: {x: -106, y: -86}
   m_SizeDelta: {x: 160, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &213460166
@@ -876,6 +876,82 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1194164906
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1194164907}
+  - component: {fileID: 1194164909}
+  - component: {fileID: 1194164908}
+  m_Layer: 5
+  m_Name: BGText
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1194164907
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1194164906}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 187343185}
+  m_Father: {fileID: 1747703993}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 907, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1194164908
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1194164906}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1194164909
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1194164906}
+  m_CullTransparentMesh: 1
 --- !u!1001 &1373974510
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1378,7 +1454,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 273035920}
-  - {fileID: 187343185}
+  - {fileID: 1194164907}
   - {fileID: 213460165}
   - {fileID: 86967505}
   - {fileID: 1450615448}
@@ -1418,54 +1494,109 @@ MonoBehaviour:
   nextLevelButton: {fileID: 709989}
   retryButton: {fileID: 298066422}
   questions:
-  - questionText: Halo
+  - questionText: Bintang raksasa ini menjadi pusat tata surya kita dan sumber utama
+      cahaya serta panas. Apa itu?
     options:
-    - hai
-    - hi
-    - he
-    - ha
-    correctAnswerIndex: 0
-    questionImage: {fileID: 21300000, guid: a16d382713c7dfd41a18a8f6af179641, type: 3}
-    answerImages: []
-    usesImageAnswers: 0
-  - questionText: Singa
-    options: []
-    correctAnswerIndex: 3
-    questionImage: {fileID: 21300000, guid: b6c1a9bfbf8bca24b962139e7217b3c6, type: 3}
+    - Bulan
+    - Bintang
+    - Matahari
+    - Mars
+    correctAnswerIndex: 2
+    questionImage: {fileID: 21300000, guid: 5b81bdc23c8b36a408cf13f0ad51370b, type: 3}
     answerImages:
     - {fileID: 21300000, guid: f1f52e6492838d4458139d23018309b6, type: 3}
     - {fileID: 21300000, guid: e67e1d9fb96e05642b3b2b435ad996c8, type: 3}
     - {fileID: 21300000, guid: f767afe0911dee24c8717e7cbfcf3661, type: 3}
     - {fileID: 21300000, guid: 5b81bdc23c8b36a408cf13f0ad51370b, type: 3}
-    usesImageAnswers: 1
-  - questionText: Nona
-    options:
-    - hai
-    - hi
-    - he
-    - ha
-    correctAnswerIndex: 1
-    questionImage: {fileID: 21300000, guid: 30ecf551cd356f546bb783bfe8c489d2, type: 3}
-    answerImages: []
     usesImageAnswers: 0
-  - questionText: nongsim
+  - questionText: 'Planet ini adalah yang paling dekat dengan Matahari dan tidak
+      memiliki atmosfer tebal, Planet kecil ini paling dekat ke Matahari, jadi siangnya
+      super panas tapi malamnya dingin banget. Apa itu? '
     options:
-    - hai
-    - hi
-    - he
-    - ha
-    correctAnswerIndex: 0
-    questionImage: {fileID: 21300000, guid: 5cdd4ef0fb526044fa4a888c95f3e2c1, type: 3}
-    answerImages: []
-    usesImageAnswers: 0
-  - questionText: Alrizza
-    options:
-    - hai
-    - hi
-    - he
-    - ha
+    - Mars
+    - Venus
+    - Neptunus
+    - Merkurius
     correctAnswerIndex: 3
+    questionImage: {fileID: 21300000, guid: d64487cde35dd014baf2af5e87cf2645, type: 3}
+    answerImages: []
+    usesImageAnswers: 0
+  - questionText: Planet ini sangat panas karena efek rumah kaca ekstrem dan dikenal
+      sebagai "bintang fajar". Apa itu?
+    options:
+    - Venus
+    - Bumi
+    - Saturnus
+    - Uranus
+    correctAnswerIndex: 0
     questionImage: {fileID: 21300000, guid: e67e1d9fb96e05642b3b2b435ad996c8, type: 3}
+    answerImages: []
+    usesImageAnswers: 0
+  - questionText: Planet ini satu-satunya yang diketahui mendukung kehidupan, dan
+      Planet ini tempat tinggal kita semua. Apa itu?
+    options:
+    - Mars
+    - Venus
+    - Bumi
+    - Yupiter
+    correctAnswerIndex: 2
+    questionImage: {fileID: 21300000, guid: c813c706b00884b4ea6fd4d88b948857, type: 3}
+    answerImages: []
+    usesImageAnswers: 0
+  - questionText: 'Planet ini dikenal sebagai "planet merah" karena permukaannya
+      mengandung besi oksida,dan katanya bisa jadi tempat tinggal manusia di masa
+      depan. Apa itu? '
+    options:
+    - Mars
+    - Venus
+    - Saturnus
+    - Merkurius
+    correctAnswerIndex: 0
+    questionImage: {fileID: 21300000, guid: 692018017b370c144af0fcb43bd09fd8, type: 3}
+    answerImages: []
+    usesImageAnswers: 0
+  - questionText: Planet ini adalah yang terbesar di tata surya dan memiliki badai
+      besar bernama "Great Red Spot" yang udah berlangsung ratusan tahun. Apa itu?
+    options:
+    - Neptunus
+    - Saturnus
+    - Uranus
+    - Yupiter
+    correctAnswerIndex: 3
+    questionImage: {fileID: 21300000, guid: 496618e61d7328847ad8b10d64719faf, type: 3}
+    answerImages: []
+    usesImageAnswers: 0
+  - questionText: 'Planet ini terkenal karena cincin es raksasa yang bikin dia terlihat
+      paling keren kalau dilihat dari teleskop. Apa itu? '
+    options:
+    - Yupiter
+    - Saturnus
+    - Uranus
+    - Neptunus
+    correctAnswerIndex: 2
+    questionImage: {fileID: 21300000, guid: 539cb3992aac88f42ae89d3b4319cca5, type: 3}
+    answerImages: []
+    usesImageAnswers: 0
+  - questionText: Planet ini berputar miring hampir 90 derajat , dia berputar miring
+      seperti tidur sambil muter dan tampak berwarna biru kehijauan . Apa itu?
+    options:
+    - Uranus
+    - Saturnus
+    - Mars
+    - Merkurius
+    correctAnswerIndex: 0
+    questionImage: {fileID: 21300000, guid: f767afe0911dee24c8717e7cbfcf3661, type: 3}
+    answerImages: []
+    usesImageAnswers: 0
+  - questionText: 'Planet ini adalah yang terjauh dari Matahari berwarna biru tua
+      dan memiliki angin tercepat di tata surya. Apa itu? '
+    options:
+    - Uranus
+    - Saturnus
+    - Yupiter
+    - Neptunus
+    correctAnswerIndex: 3
+    questionImage: {fileID: 21300000, guid: f1f52e6492838d4458139d23018309b6, type: 3}
     answerImages: []
     usesImageAnswers: 0
 --- !u!114 &1747703995
