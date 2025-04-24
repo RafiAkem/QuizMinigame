@@ -917,6 +917,54 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1194164906}
   m_CullTransparentMesh: 1
+--- !u!1 &1205173890
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1205173892}
+  - component: {fileID: 1205173891}
+  m_Layer: 0
+  m_Name: ToggleMusic
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1205173891
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1205173890}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16b4c5e9624188f40bbe20b20fdd6fd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  musicToggleButton: {fileID: 1373974514}
+  musicOnIcon: {fileID: 21300000, guid: ef94fae637a07144587b83af66768d50, type: 3}
+  musicOffIcon: {fileID: 21300000, guid: f76b56f2caf2d064a82e9e95a443ba07, type: 3}
+  buttonImage: {fileID: 1373974513}
+--- !u!4 &1205173892
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1205173890}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 825.4264, y: 573.86646, z: -6.9923315}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1373974510
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1157,6 +1205,28 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 6072918513078921262, guid: 90ebecadcecd69241bf18c27e6ac4693, type: 3}
   m_PrefabInstance: {fileID: 1373974510}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1373974513 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4487864730932812557, guid: 90ebecadcecd69241bf18c27e6ac4693, type: 3}
+  m_PrefabInstance: {fileID: 1373974510}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1373974514 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 796673006217530891, guid: 90ebecadcecd69241bf18c27e6ac4693, type: 3}
+  m_PrefabInstance: {fileID: 1373974510}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!224 &1418645358 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 8189880988752231064, guid: 3c80da89435a4f94690e921ac6361bdd, type: 3}
@@ -1475,7 +1545,8 @@ MonoBehaviour:
   questionImage: {fileID: 86967506}
   answerImages: []
   audioSource: {fileID: 1450615449}
-  answerClickSound: {fileID: 8300000, guid: 3ee6d6c2cc1151f41b393c896167c801, type: 3}
+  correctSound: {fileID: 8300000, guid: 8bd084013a521a347a1d8a2648bbebb0, type: 3}
+  wrongSound: {fileID: 8300000, guid: ef71cedaa7e7164438a5375699e6b11f, type: 3}
   questionTime: 20
   timerText: {fileID: 1651062568}
   ScoreCanvas: {fileID: 324602429}
@@ -1795,3 +1866,4 @@ SceneRoots:
   - {fileID: 1373974510}
   - {fileID: 2038158642}
   - {fileID: 1980985755}
+  - {fileID: 1205173892}

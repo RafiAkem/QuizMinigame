@@ -377,7 +377,7 @@ MonoBehaviour:
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
-    m_HighlightedSprite: {fileID: 21300000, guid: 78fc860f9cdf2834f8390cf3bffe4bce, type: 3}
+    m_HighlightedSprite: {fileID: 21300000, guid: 900a12c56d30d9c4184be6be8ee8fd64, type: 3}
     m_PressedSprite: {fileID: 0}
     m_SelectedSprite: {fileID: 0}
     m_DisabledSprite: {fileID: 0}
@@ -412,7 +412,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 98cf838c86e5e034b9860e6924bab809, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 864f8652917f7d543b3c6cc3acd7c14f, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -444,8 +444,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   levelNumber: 3
   sceneToLoad: Level3
-  lockedSprite: {fileID: 21300000, guid: 98cf838c86e5e034b9860e6924bab809, type: 3}
-  unlockedSprite: {fileID: 21300000, guid: dc346ff7afbf6944597b0b12717a9791, type: 3}
+  lockedSprite: {fileID: 21300000, guid: 3dc7d9801a242c54e895ee6ff194fa3a, type: 3}
+  unlockedSprite: {fileID: 21300000, guid: 864f8652917f7d543b3c6cc3acd7c14f, type: 3}
 --- !u!1 &724384098
 GameObject:
   m_ObjectHideFlags: 0
@@ -721,7 +721,7 @@ MonoBehaviour:
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
-    m_HighlightedSprite: {fileID: 21300000, guid: 8290c76608312e4418714394fa3198cd, type: 3}
+    m_HighlightedSprite: {fileID: 21300000, guid: ecf5e345b67a53847ac0313f115f8d2d, type: 3}
     m_PressedSprite: {fileID: 0}
     m_SelectedSprite: {fileID: 0}
     m_DisabledSprite: {fileID: 0}
@@ -756,7 +756,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: bb9122d85eac200438e17f23502d61fb, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c9db89faae92dbd4592f48f859793eba, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -788,8 +788,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   levelNumber: 2
   sceneToLoad: Level2
-  lockedSprite: {fileID: 21300000, guid: bb9122d85eac200438e17f23502d61fb, type: 3}
-  unlockedSprite: {fileID: 21300000, guid: 8db9f611b5889f748b61804e0bcf4df9, type: 3}
+  lockedSprite: {fileID: 21300000, guid: 8d539f9d44293dc4e9c914786d8a8f0a, type: 3}
+  unlockedSprite: {fileID: 21300000, guid: c9db89faae92dbd4592f48f859793eba, type: 3}
 --- !u!1 &1503008915
 GameObject:
   m_ObjectHideFlags: 0
@@ -858,7 +858,7 @@ MonoBehaviour:
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
-    m_HighlightedSprite: {fileID: 21300000, guid: d10d69dece1a147438f55a547f3cdbe8, type: 3}
+    m_HighlightedSprite: {fileID: 21300000, guid: f09e79e428dd21140ba0e4ef2e39284b, type: 3}
     m_PressedSprite: {fileID: 0}
     m_SelectedSprite: {fileID: 0}
     m_DisabledSprite: {fileID: 0}
@@ -893,7 +893,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 5f53c64feef5741478aad7380d1f22ce, type: 3}
+  m_Sprite: {fileID: 21300000, guid: eaaf91621f86f3b40b4d622cc83606b8, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -925,8 +925,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   levelNumber: 1
   sceneToLoad: Level1
-  lockedSprite: {fileID: 21300000, guid: 5f53c64feef5741478aad7380d1f22ce, type: 3}
-  unlockedSprite: {fileID: 21300000, guid: 5f53c64feef5741478aad7380d1f22ce, type: 3}
+  lockedSprite: {fileID: 21300000, guid: eaaf91621f86f3b40b4d622cc83606b8, type: 3}
+  unlockedSprite: {fileID: 21300000, guid: eaaf91621f86f3b40b4d622cc83606b8, type: 3}
 --- !u!1 &1658521667
 GameObject:
   m_ObjectHideFlags: 0

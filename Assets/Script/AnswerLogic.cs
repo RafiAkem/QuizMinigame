@@ -22,7 +22,9 @@ public class AnswerLogic : MonoBehaviour
     [SerializeField] private Image questionImage;
     [SerializeField] private List<Sprite> answerImages;
     [SerializeField] private AudioSource audioSource;
-    [SerializeField] private AudioClip answerClickSound;
+    [SerializeField] private AudioClip correctSound;
+    [SerializeField] private AudioClip wrongSound;
+
     [SerializeField] private float questionTime = 10f;
     [SerializeField] private TextMeshProUGUI timerText;
     [SerializeField] public GameObject ScoreCanvas;
@@ -120,7 +122,6 @@ public class AnswerLogic : MonoBehaviour
     int index = i;
     btn.onClick.AddListener(() =>
     {
-        audioSource.PlayOneShot(answerClickSound);
         CheckAnswer(index);
     });
 }
@@ -128,22 +129,27 @@ public class AnswerLogic : MonoBehaviour
     isCountingDown = true;
     }
 
-    void CheckAnswer(int index)
-    {
-        isCountingDown = false;
-        if (index == questions[currentQuestionIndex].correctAnswerIndex)
-        {
-            score++;
-            Debug.Log("Correct!");
-        }
-        else
-        {
-            Debug.Log("Wrong!");
-        }
+void CheckAnswer(int index)
+{
+    isCountingDown = false;
 
-        currentQuestionIndex++;
-        DisplayQuestion();
+    if (index == questions[currentQuestionIndex].correctAnswerIndex)
+    {
+        score++;
+        Debug.Log("Correct!");
+        if (correctSound != null)
+            audioSource.PlayOneShot(correctSound);
     }
+    else
+    {
+        Debug.Log("Wrong!");
+        if (wrongSound != null)
+            audioSource.PlayOneShot(wrongSound);
+    }
+
+    currentQuestionIndex++;
+    DisplayQuestion();
+}
 
 void EndQuiz()
 {
