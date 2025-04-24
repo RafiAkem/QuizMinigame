@@ -24,4 +24,8 @@ public class MenuManager : MonoBehaviour
     public void backbutton() {
         SceneManager.LoadScene("MainMenu");
     }
+
+    public void CreditsButton() {
+        SceneManager.LoadScene("Credit");
+    }
 }

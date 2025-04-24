@@ -270,7 +270,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 129859074}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1666518491}
+        m_TargetAssemblyTypeName: MenuManager, Assembly-CSharp
+        m_MethodName: backbutton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &129859074
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -479,6 +491,50 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 3751620613906495061, guid: ff8b4a11382deec428b617635447b69f, type: 3}
   m_PrefabInstance: {fileID: 1165845071}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1666518490
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1666518492}
+  - component: {fileID: 1666518491}
+  m_Layer: 0
+  m_Name: MenuManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1666518491
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1666518490}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceaa0db5441c47545bb853fe279f2a2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1666518492
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1666518490}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 768.0336, y: 537.03564, z: -6.936088}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1733286591
 GameObject:
   m_ObjectHideFlags: 0
@@ -766,6 +822,34 @@ PrefabInstance:
       propertyPath: m_Name
       value: Credit
       objectReference: {fileID: 0}
+    - target: {fileID: 3974589240149667461, guid: f03d93c6bd654044eb6b3d34b61263e9, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3974589240149667461, guid: f03d93c6bd654044eb6b3d34b61263e9, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3974589240149667461, guid: f03d93c6bd654044eb6b3d34b61263e9, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1666518491}
+    - target: {fileID: 3974589240149667461, guid: f03d93c6bd654044eb6b3d34b61263e9, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3974589240149667461, guid: f03d93c6bd654044eb6b3d34b61263e9, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: CreditsButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 3974589240149667461, guid: f03d93c6bd654044eb6b3d34b61263e9, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: MenuManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 3974589240149667461, guid: f03d93c6bd654044eb6b3d34b61263e9, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 7882445363397910271, guid: f03d93c6bd654044eb6b3d34b61263e9, type: 3}
       propertyPath: m_text
       value: 
@@ -782,3 +866,4 @@ SceneRoots:
   - {fileID: 1908550585}
   - {fileID: 1733286595}
   - {fileID: 1141974863}
+  - {fileID: 1666518492}
