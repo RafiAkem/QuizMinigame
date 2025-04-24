@@ -217,7 +217,7 @@ MonoBehaviour:
     - Serigala
     - Kelelawar
     - Tikus
-    correctAnswerIndex: 0
+    correctAnswerIndex: 2
     questionImage: {fileID: 21300000, guid: 13a28ba81c5c07841a682d56aad552ed, type: 3}
     answerImages: []
     usesImageAnswers: 0
@@ -244,7 +244,7 @@ MonoBehaviour:
     - Kambing
     - Monyet
     - Kucing
-    correctAnswerIndex: 0
+    correctAnswerIndex: 1
     questionImage: {fileID: 21300000, guid: d9abb11709860fe47a7b42438af46443, type: 3}
     answerImages: []
     usesImageAnswers: 0
@@ -266,7 +266,7 @@ MonoBehaviour:
     - Harimau
     - Singa
     - Cheetah
-    correctAnswerIndex: 3
+    correctAnswerIndex: 2
     questionImage: {fileID: 21300000, guid: ebbaceaaa720f694c94ebbb042ca0afc, type: 3}
     answerImages: []
     usesImageAnswers: 0
@@ -1412,6 +1412,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PauseMenu
       objectReference: {fileID: 0}
+    - target: {fileID: 957607798807584589, guid: 90ebecadcecd69241bf18c27e6ac4693, type: 3}
+      propertyPath: m_Name
+      value: TextPaused
+      objectReference: {fileID: 0}
     - target: {fileID: 1390194418344857463, guid: 90ebecadcecd69241bf18c27e6ac4693, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -1483,6 +1487,38 @@ PrefabInstance:
     - target: {fileID: 3953798512653180069, guid: 90ebecadcecd69241bf18c27e6ac4693, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6486267070115686873, guid: 90ebecadcecd69241bf18c27e6ac4693, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6486267070115686873, guid: 90ebecadcecd69241bf18c27e6ac4693, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6486267070115686873, guid: 90ebecadcecd69241bf18c27e6ac4693, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1698797780}
+    - target: {fileID: 6486267070115686873, guid: 90ebecadcecd69241bf18c27e6ac4693, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6486267070115686873, guid: 90ebecadcecd69241bf18c27e6ac4693, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: BackButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 6486267070115686873, guid: 90ebecadcecd69241bf18c27e6ac4693, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Pause, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6486267070115686873, guid: 90ebecadcecd69241bf18c27e6ac4693, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 6752790408230965581, guid: 90ebecadcecd69241bf18c27e6ac4693, type: 3}
+      propertyPath: m_Name
+      value: ButtonGrid
       objectReference: {fileID: 0}
     - target: {fileID: 7130399990785088808, guid: 90ebecadcecd69241bf18c27e6ac4693, type: 3}
       propertyPath: m_AnchorMax.y
