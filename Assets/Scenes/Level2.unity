@@ -210,6 +210,8 @@ MonoBehaviour:
   currentLevelIndex: 2
   nextLevelButton: {fileID: 1347250210}
   retryButton: {fileID: 206062944}
+  selectLevelBtn1: {fileID: 896183013603917142}
+  selectLevelBtn2: {fileID: 896183013603917142}
   answerFontSize: 50
   questions:
   - questionText: Hewan mamalia ini adalah satu-satunya yang bisa terbang, hewan
@@ -1985,6 +1987,11 @@ PrefabInstance:
 --- !u!224 &896183013603917141 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 6180258134271156913, guid: 4059812f834911f4780d600eec50095f, type: 3}
+  m_PrefabInstance: {fileID: 896183013603917140}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &896183013603917142 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4712647720968995697, guid: 4059812f834911f4780d600eec50095f, type: 3}
   m_PrefabInstance: {fileID: 896183013603917140}
   m_PrefabAsset: {fileID: 0}
 --- !u!1660057539 &9223372036854775807

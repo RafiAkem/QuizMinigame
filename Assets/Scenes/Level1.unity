@@ -194,6 +194,8 @@ MonoBehaviour:
   currentLevelIndex: 1
   nextLevelButton: {fileID: 1001093530}
   retryButton: {fileID: 1286530957}
+  selectLevelBtn1: {fileID: 6826101328882699118}
+  selectLevelBtn2: {fileID: 6826101328882699118}
   answerFontSize: 50
   questions:
   - questionText: Buah ini berkaitan dengan terwujudnya gaya newton, buah apakah
@@ -1934,6 +1936,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4059812f834911f4780d600eec50095f, type: 3}
+--- !u!1 &6826101328882699118 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4712647720968995697, guid: 4059812f834911f4780d600eec50095f, type: 3}
+  m_PrefabInstance: {fileID: 6826101328882699117}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &7390766031404018197 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8451568101460889415, guid: 4059812f834911f4780d600eec50095f, type: 3}

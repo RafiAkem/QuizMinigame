@@ -34,6 +34,9 @@ public class AnswerLogic : MonoBehaviour
     [SerializeField] private Button nextLevelButton;
     [SerializeField] private Button retryButton;
 
+    [SerializeField] private GameObject selectLevelBtn1; // Button for incorrect answers
+    [SerializeField] private GameObject selectLevelBtn2; // Button for correct answers
+
     [SerializeField] private float answerFontSize = 24f; // Tambahan untuk atur ukuran font
 
     private float timer;
@@ -59,6 +62,10 @@ public class AnswerLogic : MonoBehaviour
         DisplayQuestion();
         Time.timeScale = 1f;
         ScoreCanvas.SetActive(false);
+
+        // Ensure both buttons are hidden at the start
+        if (selectLevelBtn1 != null) selectLevelBtn1.SetActive(false);
+        if (selectLevelBtn2 != null) selectLevelBtn2.SetActive(false);
     }
 
     void DisplayQuestion()
@@ -156,19 +163,44 @@ public class AnswerLogic : MonoBehaviour
         ScoreText.text = $"{score}/{questions.Count}";
         ScoreText.gameObject.SetActive(true);
 
-        if (score == questions.Count)
+        // Check if the current level is level 3
+        if (currentLevelIndex == 3)
         {
-            int nextLevel = currentLevelIndex + 1;
-            Debug.Log($"Player aced the quiz. Unlocking next level: {nextLevel}");
-            LevelProgress.UnlockLevel(nextLevel);
+            if (score == questions.Count)
+            {
+                int nextLevel = currentLevelIndex + 1;
+                Debug.Log($"Player aced the quiz. Unlocking next level: {nextLevel}");
+                LevelProgress.UnlockLevel(nextLevel);
 
-            nextLevelButton.gameObject.SetActive(true);
-            retryButton.gameObject.SetActive(false);
+                selectLevelBtn2.SetActive(true);
+                nextLevelButton.gameObject.SetActive(false);
+                retryButton.gameObject.SetActive(false);
+            }
+            else
+            {
+                selectLevelBtn1.SetActive(true);
+                nextLevelButton.gameObject.SetActive(false);
+                retryButton.gameObject.SetActive(true);
+            }
         }
         else
         {
-            nextLevelButton.gameObject.SetActive(false);
-            retryButton.gameObject.SetActive(true);
+            if (score == questions.Count)
+            {
+                int nextLevel = currentLevelIndex + 1;
+                Debug.Log($"Player aced the quiz. Unlocking next level: {nextLevel}");
+                LevelProgress.UnlockLevel(nextLevel);
+
+                selectLevelBtn2.SetActive(true);
+                nextLevelButton.gameObject.SetActive(true);
+                retryButton.gameObject.SetActive(false);
+            }
+            else
+            {
+                selectLevelBtn1.SetActive(true);
+                nextLevelButton.gameObject.SetActive(false);
+                retryButton.gameObject.SetActive(true);
+            }
         }
 
         foreach (var btn in answerButtons)
