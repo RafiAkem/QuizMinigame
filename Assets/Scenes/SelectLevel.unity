@@ -503,7 +503,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 4ae280afed9965845a8f26a124a8ea4f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8d450908bfbd6cf40bf840ab9c6e2afc, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -721,7 +721,7 @@ MonoBehaviour:
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
-    m_HighlightedSprite: {fileID: 21300000, guid: ecf5e345b67a53847ac0313f115f8d2d, type: 3}
+    m_HighlightedSprite: {fileID: 21300000, guid: 53e7baffac9bd9c41a5899cf9d5a0f17, type: 3}
     m_PressedSprite: {fileID: 0}
     m_SelectedSprite: {fileID: 0}
     m_DisabledSprite: {fileID: 0}
@@ -756,7 +756,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: c9db89faae92dbd4592f48f859793eba, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 909982a5da85a1342bcf0663c5b7a36e, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -788,8 +788,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   levelNumber: 2
   sceneToLoad: Level2
-  lockedSprite: {fileID: 21300000, guid: 8d539f9d44293dc4e9c914786d8a8f0a, type: 3}
-  unlockedSprite: {fileID: 21300000, guid: c9db89faae92dbd4592f48f859793eba, type: 3}
+  lockedSprite: {fileID: 21300000, guid: 41018d784751f9f45bf314d93415e17f, type: 3}
+  unlockedSprite: {fileID: 21300000, guid: 909982a5da85a1342bcf0663c5b7a36e, type: 3}
 --- !u!1 &1503008915
 GameObject:
   m_ObjectHideFlags: 0
@@ -858,7 +858,7 @@ MonoBehaviour:
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
-    m_HighlightedSprite: {fileID: 21300000, guid: f09e79e428dd21140ba0e4ef2e39284b, type: 3}
+    m_HighlightedSprite: {fileID: 21300000, guid: 4940218e6fbc3e2458448f1e8ec75432, type: 3}
     m_PressedSprite: {fileID: 0}
     m_SelectedSprite: {fileID: 0}
     m_DisabledSprite: {fileID: 0}
@@ -893,7 +893,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: eaaf91621f86f3b40b4d622cc83606b8, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 24e8e8ef692d31b49ab495fc1d65a93d, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -925,8 +925,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   levelNumber: 1
   sceneToLoad: Level1
-  lockedSprite: {fileID: 21300000, guid: eaaf91621f86f3b40b4d622cc83606b8, type: 3}
-  unlockedSprite: {fileID: 21300000, guid: eaaf91621f86f3b40b4d622cc83606b8, type: 3}
+  lockedSprite: {fileID: 21300000, guid: 520a6c70ceec1eb4480b0b6a93a12617, type: 3}
+  unlockedSprite: {fileID: 21300000, guid: 24e8e8ef692d31b49ab495fc1d65a93d, type: 3}
 --- !u!1 &1658521667
 GameObject:
   m_ObjectHideFlags: 0
